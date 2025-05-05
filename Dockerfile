@@ -7,4 +7,4 @@ COPY main.py .
 RUN mkdir /app/cache && chown nobody /app/cache
 USER nobody
 ENV TRANSFORMERS_CACHE=/app/cache
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
