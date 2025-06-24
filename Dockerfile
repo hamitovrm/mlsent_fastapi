@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.11
 WORKDIR /app
 EXPOSE 8000
 COPY requirements.txt ./requirements.txt
@@ -8,4 +8,4 @@ COPY main.py .
 RUN mkdir /app/cache && chown nobody /app/cache
 USER nobody
 ENV TRANSFORMERS_CACHE=/app/cache
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
