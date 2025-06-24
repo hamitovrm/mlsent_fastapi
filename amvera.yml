@@ -6,7 +6,6 @@ meta:
 build:
   requirementsPath: requirements.txt
 run:
-  scriptName: ""
   command: uvicorn main:app
   persistenceMount: /data
   containerPort: "80"
