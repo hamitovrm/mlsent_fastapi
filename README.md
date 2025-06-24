@@ -7,3 +7,6 @@
 Демонстрация тестирования приложения, сборки Docker образа и выладывания его на Docker Hub.
 
 https://cloud.amvera.ru
+
+
+xcvxcv
