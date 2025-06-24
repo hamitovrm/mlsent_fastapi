@@ -6,5 +6,5 @@ meta:
 build:
   requirementsPath: requirements.txt
 run:
-  command: gunicorn --bind 0.0.0.0:5000 app:app
+  command: gunicorn --bind 0.0.0.0:8000 main:app
   containerPort: "8000"
